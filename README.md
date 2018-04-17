@@ -12,6 +12,7 @@ provide to relevant analyst for data analysis.
  - Cloudera Manager( cdh>=5.7.2 )
  - Cloudera Impala( >=impala-2.5.0+cdh5.7.2 )
 
+**Important: Testing OK on CDH 5.7.2 and 5.12.1, other versions are not guaranteed to be available.**
 
 ## 2.2. Install
  - Clone source code and export environment variable. 
