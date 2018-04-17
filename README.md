@@ -16,7 +16,7 @@ provide to relevant analyst for data analysis.
 ## 2.2. Install
  - Clone source code and export environment variable. 
  >
-    git clone git@gitlab.gridsum.com:data-engineering/impala-toolbox/IQD-divertor.git  
+    git clone https://github.com/gridsum/IQD-divertor.git  
     cd IQD-divertor  
     echo "export IQD_DIVERTOR_HOME=\`pwd\`" >> ~/.bashrc  
 
