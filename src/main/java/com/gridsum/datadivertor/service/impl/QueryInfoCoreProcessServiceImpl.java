@@ -175,8 +175,14 @@ public class QueryInfoCoreProcessServiceImpl implements QueryInfoCoreProcessServ
             } else {
                 // update the datetime slot to continue fetch the query information isn't fetched.
                 if (batchInfo.getPageCounter() > 0) {
-                    fetchEndTime = DateUtil.dateToString(
+                    String gmtNextBatchEndTime = DateUtil.dateToString(
                             DateUtil.cst2gmt(batchInfo.getNextBatchEndTime()), DateUtil.SDF_DATETIME);
+                    if (fetchEndTime.equals(gmtNextBatchEndTime)) {
+                        this.parquetService.close(parquetInfo);
+                        break;
+                    }
+
+                    fetchEndTime = gmtNextBatchEndTime;
                     LOGGER.info("update DateTimeSlotGMT: ({}, {}]", fetchStartTime, fetchEndTime);
                     batchInfo.setPageCounter(0);
                     continue;
