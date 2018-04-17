@@ -1,0 +1,264 @@
+{
+	"type": "record",
+	"name": "impala_query_info",
+	"fields": [{
+		"name": "query_id",
+		"type": "string"
+	},
+	{
+		"name": "query_type",
+		"type": "string"
+	},
+	{
+		"name": "query_state",
+		"type": "string"
+	},
+	{
+		"name": "rows_produced",
+		"type": "long"
+	},
+	{
+		"name": "user",
+		"type": "string"
+	},
+	{
+		"name": "coordinator",
+		"type": "string"
+	},
+	{
+		"name": "details_available",
+		"type": "boolean"
+	},
+	{
+		"name": "database",
+		"type": "string"
+	},
+	{
+		"name": "duration_millis",
+		"type": "long"
+	},
+	{
+		"name": "cluster_type",
+		"type": "string"
+	},
+	{
+		"name": "start_time",
+		"type": "long"
+	},
+	{
+		"name": "end_time",
+		"type": "long"
+	},
+	{
+		"name": "admission_result",
+		"type": "string"
+	},
+	{
+		"name": "admission_wait",
+		"type": "long"
+	},
+	{
+		"name": "client_fetch_wait_time",
+		"type": "long"
+	},
+	{
+		"name": "client_fetch_wait_time_percentage",
+		"type": "double"
+	},
+	{
+		"name": "cm_cpu_milliseconds",
+		"type": "double"
+	},
+	{
+		"name": "connected_user",
+		"type": "string"
+	},
+	{
+		"name": "estimated_per_node_peak_memory",
+		"type": "long"
+	},
+	{
+		"name": "file_formats",
+		"type": "string"
+	},
+	{
+		"name": "hdfs_average_scan_range",
+		"type": "double"
+	},
+	{
+		"name": "hdfs_bytes_read",
+		"type": "long"
+	},
+	{
+		"name": "hdfs_bytes_read_from_cache",
+		"type": "long"
+	},
+	{
+		"name": "hdfs_bytes_read_from_cache_percentage",
+		"type": "double"
+	},
+	{
+		"name": "hdfs_bytes_read_local",
+		"type": "long"
+	},
+	{
+		"name": "hdfs_bytes_read_local_percentage",
+		"type": "double"
+	},
+	{
+		"name": "hdfs_bytes_read_remote",
+		"type": "long"
+	},
+	{
+		"name": "hdfs_bytes_read_remote_percentage",
+		"type": "double"
+	},
+	{
+		"name": "hdfs_bytes_read_short_circuit",
+		"type": "long"
+	},
+	{
+		"name": "hdfs_bytes_read_short_circuit_percentage",
+		"type": "double"
+	},
+	{
+		"name": "hdfs_scanner_average_bytes_read_per_second",
+		"type": "double"
+	},
+	{
+		"name": "impala_version",
+		"type": "string"
+	},
+	{
+		"name": "memory_spilled",
+		"type": "long"
+	},
+	{
+		"name": "network_address",
+		"type": "string"
+	},
+	{
+		"name": "oom",
+		"type": "string"
+	},
+	{
+		"name": "original_user",
+		"type": "string"
+	},
+	{
+		"name": "planning_wait_time",
+		"type": "long"
+	},
+	{
+		"name": "planning_wait_time_percentage",
+		"type": "double"
+	},
+	{
+		"name": "pool",
+		"type": "string"
+	},
+	{
+		"name": "query_status",
+		"type": "string"
+	},
+	{
+		"name": "session_id",
+		"type": "string"
+	},
+	{
+		"name": "session_type",
+		"type": "string"
+	},
+	{
+		"name": "stats_missing",
+		"type": "string"
+	},
+	{
+		"name": "thread_cpu_time",
+		"type": "long"
+	},
+	{
+		"name": "thread_cpu_time_percentage",
+		"type": "double"
+	},
+	{
+		"name": "thread_network_receive_wait_time",
+		"type": "long"
+	},
+	{
+		"name": "thread_network_receive_wait_time_percentage",
+		"type": "double"
+	},
+	{
+		"name": "thread_network_send_wait_time",
+		"type": "long"
+	},
+	{
+		"name": "thread_network_send_wait_time_percentage",
+		"type": "double"
+	},
+	{
+		"name": "thread_storage_wait_time",
+		"type": "long"
+	},
+	{
+		"name": "thread_storage_wait_time_percentage",
+		"type": "double"
+	},
+	{
+		"name": "thread_total_time",
+		"type": "long"
+	},
+	{
+		"name": "bytes_streamed",
+		"type": "long"
+	},
+	{
+		"name": "delegated_user",
+		"type": "string"
+	},
+	{
+		"name": "memory_per_node_peak",
+		"type": "double"
+	},
+	{
+		"name": "memory_per_node_peak_node",
+		"type": "string"
+	},
+	{
+		"name": "memory_aggregate_peak",
+		"type": "double"
+	},
+	{
+		"name": "memory_accrual",
+		"type": "double"
+	},
+	{
+		"name": "ddl_type",
+		"type": "string"
+	},
+	{
+		"name": "rows_inserted",
+		"type": "long"
+	},
+	{
+		"name": "hdfs_bytes_written",
+		"type": "long"
+	},
+	{
+		"name": "table_list",
+		"type": ["null",
+		{
+			"type": "array",
+			"items": "string"
+		}]
+	},
+	{
+		"name": "statement",
+		"type": "string"
+	},
+	{
+		"name": "query_detail_info",
+		"type": "string"
+	}]
+}
